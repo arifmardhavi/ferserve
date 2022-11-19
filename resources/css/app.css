@@ -1,0 +1,6 @@
+@import 'aos/dist/aos';
+@import 'iziToast/dist/css/iziToast';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
