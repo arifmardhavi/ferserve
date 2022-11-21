@@ -15,7 +15,7 @@ class DeliverySeeder extends Seeder
     public function run()
     {
         Delivery::query()->upsert([
-            ['method' => 'Ambil Sendiri'],
+            ['method' => 'Kirim Sendiri'],
             ['method' => 'Kurir'],
         ], 'method');
     }
