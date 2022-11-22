@@ -6,7 +6,7 @@
         href: '{{ route('landing') }}#about',
         name: 'Tentang',
     }, {
-        href: '{{ route('landing') }}#order',
+        href: '{{ route('landing') }}#order-form',
         name: 'Pesan',
     }],
     modal: false,

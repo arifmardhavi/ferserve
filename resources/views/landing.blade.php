@@ -172,7 +172,7 @@
                 <a href="https://instagram.com/ferserve.kopi" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://tiktok.com/ferserve.kopi" target="_blank">
+                <a href="https://www.tiktok.com/@ferserve.kopi" target="_blank">
                     <i class="fab fa-tiktok"></i>
                 </a>
                 <a href="https://wa.me/6288989555044" target="_blank">
