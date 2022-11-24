@@ -2,7 +2,7 @@
     <x-navbar />
 
     <main>
-        <section class="min-h-screen bg-no-repeat bg-cover p-10 text-white flex" style="background: url({{ asset('storage/images/main.jpg') }}) no-repeat; background-size: cover;">
+        <section class="min-h-screen bg-no-repeat bg-cover p-10 md:p-16 text-white flex" style="background: url({{ asset('storage/images/main.png') }}) no-repeat; background-size: cover;">
             <div class="w-2/3 md:w-1/3 mt-36 md:mt-28" data-aos="fade-right">
                 <h1 class="text-3xl font-bold mb-4">FERSERVE</h1>
                 <h2 class="text-lg font-semibold mb-2">Khas, Aromatik dan Nikmat</h2>
@@ -16,7 +16,7 @@
         </section>
 
         <section class="bg-kuning" id="about">
-            <img src="{{ asset('storage/images/coffee.png') }}" alt="Kopi" class="w-full absolute -mt-12 md:-mt-24 min-h-[8rem] max-h-72">
+            {{-- <img src="{{ asset('storage/images/coffee.png') }}" alt="Kopi" class="w-full absolute -mt-12 md:-mt-24 min-h-[8rem] max-h-72"> --}}
             <div class="relative flex justify-between pt-20">
                 <span class="pl-10 pr-4 py-4 bg-abu uppercase text-xl font-bold" data-aos="fade-right">
                     Tentang Ferserve
@@ -24,12 +24,26 @@
                 <i class="fas fa-chevron-right text-2xl bg-coklat p-4 rounded-full text-kuning aspect-square mr-10 hidden md:flex items-center justify-center"></i>
             </div>
 
-            <div class="p-10">
+            <div class="p-10 md:p-16">
                 <div class="flex justify-between" data-aos="fade-down">
                     <p class="w-1/2">FERSERVE menyediakan jasa fermentasi kopi secara terkontrol dengan menggunakan fermentasi kit yang diproduksi sendiri.</p>
                 </div>
                 <div class="flex flex-row-reverse justify-between mt-6" data-aos="fade-up">
-                    <p class="w-1/3 text-right">Fermentasi kit terdiri dari bioreaktor nuklir dan mikroorganisme spesifik, yaitu yeast dan bakteri asam laktat yang diisolasi dari buah tropis hingga menghasilkan green bean yang telah disortasi.</p>
+                    <p class="w-1/3 text-right">Fermentasi kit terdiri dari bio dan mikroorganisme spesifik, yaitu yeast dan bakteri asam laktat yang diisolasi dari buah tropis hingga menghasilkan green bean yang telah disortasi.</p>
+                </div>
+
+                <div class="mt-6" data-aos="fade-down">
+                    <h2 class="text-xl text-coklat uppercase font-bold tracking-wider underline">Visi</h2>
+                    <p>
+                        Menjadi perusahaan terdepan sebagai pelopor jasa fermentasi kopi di Indonesia yang mandiri dan profesional.
+                    </p>
+                </div>
+
+                <div class="mt-6 text-right" data-aos="fade-down">
+                    <h2 class="text-xl text-coklat uppercase font-bold tracking-wider underline">Misi</h2>
+                    <p>
+                        Mengembangkan jasa fermentasi kopi di Indonesia dengan meningkatkan cita rasa dan aroma khas kopi di Indonesia, meningkatkan nilai jual kopi khas Indonesia, dan mendukung perusahaan mitra untuk berkembang sehingga dapat membuka peluang pekerjaan.
+                    </p>
                 </div>
             </div>
 
@@ -45,7 +59,7 @@
                 <i class="fas fa-chevron-right text-2xl bg-coklat p-4 rounded-full text-kuning aspect-square mr-10 hidden md:flex items-center justify-center"></i>
             </div>
 
-            <div class="p-10 mt-4 text-center">
+            <div class="p-10 md:p-16 mt-4 text-center">
                 <h3 class="uppercase text-coklat text-2xl font-semibold drop-shadow-lg" data-aos="zoom-in">Jasa Fermentasi Kopi</h3>
 
                 <div class="mt-12 mb-8 relative before:content-['_'] before:w-full before:block before:h-1 before:absolute before:top-1/2 lg:before:top-[45%] before:left-0 before:bg-coklat" id="liner">
@@ -63,7 +77,7 @@
         </section>
 
         <section class="min-h-screen bg-abu" id="order-form">
-            <div class="p-10" style="background: url({{ asset('storage/images/beans.webp') }});">
+            <div class="p-10 md:p-16" style="background: url({{ asset('storage/images/beans.webp') }});">
                 <div data-aos="fade-down">
                     <h2 class="text-xl text-coklat uppercase text-center font-bold tracking-wider underline">Order</h2>
         
@@ -73,7 +87,7 @@
         
                         <div class="mb-4">
                             <x-jet-label for="name" value="{{ __('Nama') }}" class="text-black font-semibold" />
-                            <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                            <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required />
                         </div>
         
                         <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-4">
@@ -96,7 +110,7 @@
                         
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                             <div>
-                                <x-jet-label for="weight" value="{{ __('Berat Biji Ceri Kopi (g)') }}" class="text-black font-semibold" />
+                                <x-jet-label for="weight" value="{{ __('Berat Biji Ceri Kopi (kg)') }}" class="text-black font-semibold" />
                                 <x-jet-input id="weight" class="block mt-1 w-full" type="number" name="weight" :value="old('weight')" required />
                             </div>
         
@@ -112,7 +126,7 @@
                             </div>
         
                             <div>
-                                <x-jet-label for="origin" value="{{ __('Asal Tanam') }}" class="text-black font-semibold" />
+                                <x-jet-label for="origin" value="{{ __('Jenis Kopi / Asal') }}" class="text-black font-semibold" />
                                 <x-jet-input id="origin" class="block mt-1 w-full" type="text" name="origin" :value="old('origin')" required />
                             </div>
                         </div>
@@ -153,7 +167,7 @@
         </section>
     </main>
 
-    <footer class="bg-coklat text-white p-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <footer class="bg-coklat text-white p-10 md:p-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div class="flex divide-x-2 divide-white gap-4">
             <img src="{{ asset('storage/images/logo.png') }}" alt="Logo" class="h-20">
             <div class="pl-4">
