@@ -110,7 +110,7 @@
                         
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                             <div>
-                                <x-jet-label for="weight" value="{{ __('Berat Biji Ceri Kopi (kg)') }}" class="text-black font-semibold" />
+                                <x-jet-label for="weight" value="{{ __('Berat Biji Ceri Kopi ('.$unit.')') }}" class="text-black font-semibold" />
                                 <x-jet-input id="weight" class="block mt-1 w-full" type="number" name="weight" :value="old('weight')" required />
                             </div>
         
@@ -168,7 +168,7 @@
     </main>
 
     <footer class="bg-coklat text-white p-10 md:p-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <div class="flex divide-x-2 divide-white gap-4">
+        <div class="sm:flex divide-x-2 divide-white gap-4">
             <img src="{{ asset('storage/images/logo.png') }}" alt="Logo" class="h-20">
             <div class="pl-4">
                 <h3>Ferserve</h3>

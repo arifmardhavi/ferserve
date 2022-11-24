@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -27,6 +28,29 @@ class Order extends Model
         'delivery_id',
         'take_id',
     ];
+
+    /**
+     * Appendable orders
+     *
+     * @var array
+     */
+    protected $appends = [
+        'mass',
+    ];
+
+    public const weightUnit = 'kg';
+
+    /**
+     * Mass attribute
+     *
+     * @return Attribute
+     */
+    public function mass(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => number_format($this->weight, thousands_separator: '.').' '.self::weightUnit
+        );
+    }
 
     /**
      * Get the fruit that owns the Order

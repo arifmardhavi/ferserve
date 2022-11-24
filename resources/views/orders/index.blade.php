@@ -28,7 +28,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{!! $order->name.'<br>'.$order->phone !!}</td>
                                     <td>{{ $order->address.' Kode pos '.$order->postal_code }}</td>
-                                    <td>{{ $order->weight }}g</td>
+                                    <td>{{ $order->mass }}</td>
                                     <td>{{ $order->fruit->name }}</td>
                                     <td>{{ $order->delivery->method }}</td>
                                     <td>{{ $order->take->method }}</td>
