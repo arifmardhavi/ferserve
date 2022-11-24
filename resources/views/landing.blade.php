@@ -26,10 +26,10 @@
 
             <div class="p-10 md:p-16">
                 <div class="flex justify-between" data-aos="fade-down">
-                    <p class="w-1/2">FERSERVE menyediakan jasa fermentasi kopi secara terkontrol dengan menggunakan fermentasi kit yang diproduksi sendiri.</p>
+                    <p class="md:w-1/2">FERSERVE menyediakan jasa fermentasi kopi secara terkontrol dengan menggunakan fermentasi kit yang diproduksi sendiri.</p>
                 </div>
                 <div class="flex flex-row-reverse justify-between mt-6" data-aos="fade-up">
-                    <p class="w-1/3 text-right">Fermentasi kit terdiri dari bio dan mikroorganisme spesifik, yaitu yeast dan bakteri asam laktat yang diisolasi dari buah tropis hingga menghasilkan green bean yang telah disortasi.</p>
+                    <p class="md:w-1/3 text-right">Fermentasi kit terdiri dari bio dan mikroorganisme spesifik, yaitu yeast dan bakteri asam laktat yang diisolasi dari buah tropis hingga menghasilkan green bean yang telah disortasi.</p>
                 </div>
 
                 <div class="mt-6" data-aos="fade-down">
