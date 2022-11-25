@@ -29,7 +29,7 @@
                     <p class="md:w-1/2">FERSERVE menyediakan jasa fermentasi kopi secara terkontrol dengan menggunakan fermentasi kit yang diproduksi sendiri.</p>
                 </div>
                 <div class="flex flex-row-reverse justify-between mt-6" data-aos="fade-up">
-                    <p class="md:w-1/3 text-right">Fermentasi kit terdiri dari bio dan mikroorganisme spesifik, yaitu yeast dan bakteri asam laktat yang diisolasi dari buah tropis hingga menghasilkan green bean yang telah disortasi.</p>
+                    <p class="md:w-1/3 text-right">Fermentasi kit terdiri dari bioreaktor dan mikroorganisme spesifik, yaitu yeast dan bakteri asam laktat yang diisolasi dari buah tropis hingga menghasilkan <i>green bean</i> yang telah disortasi.</p>
                 </div>
 
                 <div class="mt-6" data-aos="fade-down">
@@ -54,13 +54,13 @@
             {{-- <img src="{{ asset('storage/images/coffee.png') }}" alt="Kopi" class="w-full absolute -mt-8 md:-mt-20 max-h-72"> --}}
             <div class="relative flex justify-between pt-20">
                 <span class="pl-10 pr-4 py-4 bg-abu uppercase text-xl font-bold" data-aos="fade-right">
-                    PRODUK FERSERVE
+                    JASA FERSERVE
                 </span>
                 <i class="fas fa-chevron-right text-2xl bg-coklat p-4 rounded-full text-kuning aspect-square mr-10 hidden md:flex items-center justify-center"></i>
             </div>
 
             <div class="p-10 md:p-16 mt-4 text-center">
-                <h3 class="uppercase text-coklat text-2xl font-semibold drop-shadow-lg" data-aos="zoom-in">Jasa Fermentasi Kopi</h3>
+                <h3 class="uppercase text-coklat text-2xl font-semibold drop-shadow-lg" data-aos="zoom-in">Biaya Jasa</h3>
 
                 <div class="mt-12 mb-8 relative before:content-['_'] before:w-full before:block before:h-1 before:absolute before:top-1/2 lg:before:top-[45%] before:left-0 before:bg-coklat" id="liner">
                     <div class="h-6 w-4 rounded-r-full border-r-[1rem] border-coklat bg-coklat absolute top-[15%] sm:top-[28%]"></div>
@@ -70,7 +70,7 @@
                     <div class="h-6 w-4 rounded-l-full border-l-[1rem] border-coklat bg-coklat absolute top-[15%] sm:top-[28%] right-0"></div>
                 </div>
 
-                <span class="text-coklat uppercase">/ kg Green Bean</span>
+                <span class="text-coklat uppercase">/ kg Ceri Kopi</span>
 
                 <h4 class="uppercase mt-8 text-lg md:txt-2xl font-bold">Untuk segala jenis kopi</h4>
             </div>
@@ -79,7 +79,7 @@
         <section class="min-h-screen bg-abu" id="order-form">
             <div class="p-10 md:p-16" style="background: url({{ asset('storage/images/beans.webp') }});">
                 <div data-aos="fade-down">
-                    <h2 class="text-xl text-coklat uppercase text-center font-bold tracking-wider underline">Order</h2>
+                    <h2 class="text-xl text-coklat uppercase text-center font-bold tracking-wider underline">Order Form</h2>
         
                     <form action="{{ route('order') }}" method="POST" class="my-4">
                         @csrf
@@ -171,7 +171,7 @@
         <div class="sm:flex divide-x-2 divide-white gap-4">
             <img src="{{ asset('storage/images/logo.png') }}" alt="Logo" class="h-20">
             <div class="pl-4">
-                <h3>Ferserve</h3>
+                <h3 class="uppercase">Ferserve</h3>
                 <p>
                     Jalan Mertojoyo Blok L No.11<br>
                     Lowokwaru, Kota Malang, Jawa Timur, 65144
